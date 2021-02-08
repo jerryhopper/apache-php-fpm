@@ -39,7 +39,7 @@ RUN a2dismod mpm_worker
 #RUN a2dismod php
 #RUN a2enmod mpm_event
 RUN a2enmod actions
-RUN a2enmod fastcgi
+#RUN a2enmod fastcgi
 RUN a2enmod alias 
 RUN a2enconf php-fpm
 
