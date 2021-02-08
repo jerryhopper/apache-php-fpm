@@ -34,13 +34,13 @@ RUN apt-get -y install \
 
 ADD rootfs /
 
-RUN a2dismod mpm_prefork && \
-    a2dismod mpm_worker && \
-    a2dismod php && \
-    a2enmod mpm_event && \
-    a2enmod actions && \
-    a2enmod fastcgi && \
-    a2enmod alias && \
-    a2enconf php-fpm
+RUN a2dismod mpm_prefork
+RUN a2dismod mpm_worker
+RUN a2dismod php
+RUN a2enmod mpm_event
+RUN a2enmod actions
+RUN a2enmod fastcgi
+RUN a2enmod alias 
+RUN a2enconf php-fpm
 
 
