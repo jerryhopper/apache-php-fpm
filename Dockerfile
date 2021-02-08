@@ -20,8 +20,8 @@ ENV PHP_FPM_MAX_REQUESTS                   500
 
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
-    apt-add-repository multiverse && \
-    apt-get update && \
+    apt-add-repository multiverse 
+RUN apt-get update && \
     apt-get -y install \
       libapache2-mod-fastcgi \
       php-fpm && \
