@@ -25,7 +25,7 @@ RUN apt-get update && \
     apt-get -y install \
       libapache2-mod-fastcgi
       
-apt-get -y install \
+RUN apt-get -y install \
       php-fpm && \
       apt-get clean && \
       rm -f /var/www/html/index.html && \
