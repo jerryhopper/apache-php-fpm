@@ -34,7 +34,7 @@ RUN apt-get -y install \
 
 ADD rootfs /
 
-RUN a2dismod mpm_prefork
+#RUN a2dismod mpm_prefork
 RUN a2dismod mpm_worker
 RUN a2dismod php
 RUN a2enmod mpm_event
