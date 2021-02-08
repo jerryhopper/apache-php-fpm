@@ -23,7 +23,9 @@ RUN apt-get update && \
     apt-add-repository multiverse 
 RUN apt-get update && \
     apt-get -y install \
-      libapache2-mod-fastcgi \
+      libapache2-mod-fastcgi
+      
+apt-get -y install \
       php-fpm && \
       apt-get clean && \
       rm -f /var/www/html/index.html && \
