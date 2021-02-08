@@ -42,5 +42,6 @@ RUN a2enmod actions
 #RUN a2enmod fastcgi
 RUN a2enmod alias 
 #RUN a2enconf php-fpm
-
+RUN a2enmod proxy_fcgi setenvif
+RUN a2enconf php7.2-fpm
 
